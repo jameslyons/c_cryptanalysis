@@ -1,6 +1,4 @@
-/* author: James Lyons
-Aug 2012
-this code is from http://www.practicalcryptography.com/cryptanalysis/breaking-machine-ciphers/cryptanalysis-enigma/
+/* author: James Lyons 2/2014
 */
 #include "NBestList2.h"
 #include <stdlib.h>
@@ -14,7 +12,12 @@ NBestList *newListElem(int *key, float score){
     ret->key[0] = key[0];
     ret->key[1] = key[1];
     ret->key[2] = key[2];
-    ret->key[3] = key[3];        
+    ret->key[3] = key[3];   
+    ret->key[4] = key[4];   
+    ret->key[5] = key[5];   
+    ret->key[6] = key[6];   
+    ret->key[7] = key[7];   
+    ret->key[8] = key[8];   
     return ret;
 }
 
@@ -68,7 +71,6 @@ and everything that follows it.
 *************************************************/
 void freeList(NBestList *base){
     NBestList *current = base;
-    int i = 0;
     if(base == NULL) return;
     while(current->next != NULL){
         current = current->next;
