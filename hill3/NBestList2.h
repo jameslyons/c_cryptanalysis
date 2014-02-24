@@ -1,12 +1,10 @@
-/* author: James Lyons
-Aug 2012
-this code is from http://www.practicalcryptography.com/cryptanalysis/breaking-machine-ciphers/cryptanalysis-enigma-part-2/
+/* author: James Lyons 2/2014
 */
 
 #ifndef NBESTLISTH
 #define NBESTLISTH
 
-#define MAXLEN 100
+#define MAXLEN 25
 #define TRUE 1
 #define FALSE 0
 
@@ -14,7 +12,7 @@ typedef struct nbest__{
     struct nbest__ *next;
     struct nbest__ *prev;
     float score;
-    int key[4];
+    int key[9];
 } NBestList;
 
 NBestList *newListElem(int *key, float score);
