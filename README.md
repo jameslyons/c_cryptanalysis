@@ -8,5 +8,5 @@ This is currently a dump of all the programs I have written, it needs some sorti
 Todo:
 -----
 
-. write a make file with different targets for each program
-. speed optimise each of the programs
+- write a make file with different targets for each program
+- speed optimise each of the programs
